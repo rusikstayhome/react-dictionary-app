@@ -1,6 +1,7 @@
 import Meaning from "./Meaning"
 
 const Results = ({ results }) => {
+    console.log(results)
     if (results) {
         return (
             <div className="Results">
