@@ -1,7 +1,7 @@
 
 
 const Meaning = ({ meaning }) => {
-    console.log(meaning)
+
     return (
         <div className="Meaning">
             <p><strong>Synonyms: </strong>

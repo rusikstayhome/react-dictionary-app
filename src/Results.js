@@ -1,4 +1,5 @@
-import Meaning from "./Meaning"
+import Meaning from "./Meaning";
+import Phonetics from "./Phonetics";
 
 const Results = ({ results }) => {
     console.log(results)
@@ -6,6 +7,14 @@ const Results = ({ results }) => {
         return (
             <div className="Results">
                 <h2>{results.word}</h2>
+                {results.phonetics.map((phonetic, i) => {
+                    return (
+                        <div key={i}>
+                            <Phonetics phonetic={phonetic} />
+                        </div>
+                    )
+                })}
+
                 {results.meanings.map((meaning, i) => {
                     return <div key={i}>
                         <Meaning meaning={meaning} />
