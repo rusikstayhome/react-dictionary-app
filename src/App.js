@@ -9,7 +9,7 @@ function App() {
           Dictionary
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword='hello' />
         </main>
         <footer className='App-footer'>
           <small>Coded by svrmr</small>

@@ -1,13 +1,17 @@
-
+import './Meaning.css'
 
 const Meaning = ({ meaning }) => {
 
     return (
         <div className="Meaning">
-            <p><strong>Synonyms: </strong>
+
+            {meaning.synonyms.length ?
+                <strong>Synonyms: </strong> : null
+            }
+            <ul>
                 {meaning.synonyms.map((synonym, i) => {
-                    return synonym + ', ';
-                })}</p>
+                    return <li>{synonym} </li>
+                })}</ul>
             <h3>
                 {meaning.partOfSpeech}
             </h3>
@@ -15,7 +19,7 @@ const Meaning = ({ meaning }) => {
                 return (
                     <div key={i}>
                         <p>
-                            <strong>Definition:</strong>{definition.definition}
+                            <strong>Definition: </strong>{definition.definition}
                             <br />
 
                             {definition.example ? (

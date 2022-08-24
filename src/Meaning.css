@@ -1,0 +1,9 @@
+.Meaning ul {
+    margin: 0;
+    padding: 0;
+}
+.Meaning ul li {
+    display: inline-block;
+    padding-right: 15px;
+    line-height: 1;
+}
