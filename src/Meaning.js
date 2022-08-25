@@ -10,7 +10,7 @@ const Meaning = ({ meaning }) => {
             }
             <ul>
                 {meaning.synonyms.map((synonym, i) => {
-                    return <li>{synonym} </li>
+                    return <li key={i}>{synonym} </li>
                 })}</ul>
             <h3>
                 {meaning.partOfSpeech}

@@ -4,7 +4,7 @@ import Phonetics from "./Phonetics";
 import './Results.css';
 
 const Results = ({ results }) => {
-    console.log(results)
+
     if (results) {
         return (
 
