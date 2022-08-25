@@ -1,10 +1,18 @@
 body {
-  background: rgba(173, 188, 173, 0.477);
+  background: #9fd3c7;
 }
 
 .App {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.App-header {
+  margin: 0 auto;
+  color: #142d4c;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .App-footer {
